@@ -1,5 +1,6 @@
 var host = location.host;
-var protocol = location.protocol;
+var seconds = 10;
+var updateInterval = seconds * 1000;
 
 function getHeartbeat() {
   let root = document.documentElement;
@@ -15,5 +16,6 @@ function getHeartbeat() {
     });
 }
 $(document).ready(function() {
-  setInterval(getHeartbeat, 3000);
+  console.log(`New heartbeat will be fetched every ${seconds}.`);
+  setInterval(getHeartbeat, updateInterval);
 });
