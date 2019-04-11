@@ -1,0 +1,32 @@
+:root {
+  --beat: 72;
+  /* prettier-ignore */
+  --heartbeat: 1.2s;
+}
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+.heart {
+  font-size: 80px;
+  animation: beat var(--heartbeat) infinite;
+}
+@keyframes beat {
+  0% {
+    font-size: 80px;
+  }
+  50% {
+    font-size: 120px;
+  }
+  100% {
+    font-size: 80px;
+  }
+}

@@ -1,0 +1,56 @@
+:root {
+  --beat: 72;
+  /* prettier-ignore */
+  --heartbeat: 1.2s;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: black;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  min-height: 100vh;
+}
+
+.heart {
+  font-size: 80px;
+  -webkit-animation: beat var(--heartbeat) infinite;
+          animation: beat var(--heartbeat) infinite;
+}
+
+@-webkit-keyframes beat {
+  0% {
+    font-size: 80px;
+  }
+  50% {
+    font-size: 120px;
+  }
+  100% {
+    font-size: 80px;
+  }
+}
+
+@keyframes beat {
+  0% {
+    font-size: 80px;
+  }
+  50% {
+    font-size: 120px;
+  }
+  100% {
+    font-size: 80px;
+  }
+}
+/*# sourceMappingURL=style.css.map */
