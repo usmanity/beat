@@ -1,0 +1,24 @@
+{
+  "name": "beat",
+  "version": "1.0.0",
+  "description": "some heartbeart thing",
+  "main": "server.js",
+  "dependencies": {
+    "express": "^4.16.4"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/usmanity/beat.git"
+  },
+  "author": "Muhammad Usman (me@mhmd.us)",
+  "license": "MPL-2.0",
+  "bugs": {
+    "url": "https://github.com/usmanity/beat/issues"
+  },
+  "homepage": "https://github.com/usmanity/beat#readme"
+}
