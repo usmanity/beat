@@ -12,7 +12,7 @@ app.use(express.static("public"));
 
 app.get("/heartbeat", Heart.beat);
 
-if (process.env.NODE_ENV === production) {
+if (process.env.NODE_ENV === "production") {
   port = 80;
 }
 
