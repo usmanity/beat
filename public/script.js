@@ -16,6 +16,6 @@ function getHeartbeat() {
     });
 }
 $(document).ready(function() {
-  console.log(`New heartbeat will be fetched every ${seconds}.`);
+  console.log(`New heartbeat will be fetched every ${seconds} seconds.`);
   setInterval(getHeartbeat, updateInterval);
 });
