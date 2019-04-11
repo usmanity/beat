@@ -4,7 +4,8 @@ var protocol = location.protocol;
 function getHeartbeat() {
   let root = document.documentElement;
   let beat = root.style.getPropertyValue("--beat");
-  fetch(`${protocol}://${host}/heartbeat?previous=${beat}`)
+  let url = `//${host}/heartbeat?previous=${beat}`;
+  fetch(url)
     .then(response => response.json())
     .then(data => {
       let root = document.documentElement;
