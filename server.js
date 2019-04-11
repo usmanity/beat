@@ -1,9 +1,17 @@
-const express = require('express');
-const { Heart } = require('./Heart.js');
+const express = require("express");
+const { Heart } = require("./Heart.js");
 const app = express();
+
+app.use((req, res, next) => {
+  console.log(`request for ${req.path}`);
+  next();
+});
 
 app.use(express.static("public"));
 
-app.get('/heartbeat', Heart.beat);
+app.get("/heartbeat", Heart.beat);
 
-app.listen(1234);
+let port = 1234;
+app.listen(port, err => {
+  console.log(`Listening on port ${port}`);
+});
